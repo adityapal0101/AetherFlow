@@ -1,0 +1,19 @@
+[package]
+name = "aether-router"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+soroban-sdk = "21.7.7"
+
+[dev-dependencies]
+soroban-sdk = { version = "21.7.7", features = ["testutils"] }
+aether-token = { path = "../aether-token" }
+aether-pool = { path = "../aether-pool" }
+
+[features]
+testutils = ["soroban-sdk/testutils"]
