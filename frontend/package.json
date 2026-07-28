@@ -1,0 +1,32 @@
+{
+  "name": "aetherflow-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "next": "^14.2.21",
+    "react": "^18",
+    "react-dom": "^18",
+    "swr": "^2.2.4",
+    "framer-motion": "^11.0.3",
+    "lucide-react": "^0.321.0",
+    "@stellar/stellar-sdk": "^11.2.1",
+    "@stellar/freighter-api": "^2.0.0",
+    "@sentry/nextjs": "^8.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "^14.2.21",
+    "vitest": "^2.1.8"
+  }
+}
