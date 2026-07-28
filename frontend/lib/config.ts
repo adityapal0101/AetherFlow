@@ -1,0 +1,28 @@
+/**
+ * lib/config.ts
+ *
+ * Single source of truth for network + contract addresses.
+ * AetherFlow testnet deployment fallbacks.
+ */
+export const NETWORK_PASSPHRASE = 'Test SDF Network ; September 2015';
+
+export const SOROBAN_RPC_URL =
+  process.env.NEXT_PUBLIC_SOROBAN_RPC_URL || 'https://soroban-testnet.stellar.org';
+export const HORIZON_URL =
+  process.env.NEXT_PUBLIC_HORIZON_URL || 'https://horizon-testnet.stellar.org';
+
+export const POOL_CONTRACT =
+  process.env.NEXT_PUBLIC_POOL_CONTRACT_ADDRESS ||
+  'CC5UAZFE52A5C3Q5QW4KSBP7XNWSJBZITMEDR7LOR4KQABANWWAHUOT4';
+export const TOKEN_CONTRACT =
+  process.env.NEXT_PUBLIC_TOKEN_CONTRACT_ADDRESS ||
+  'CA6YHX4M75IBZ4H5JNS2HL7FFQ4FB7CH3FTSZ466SZDH6MIGXZFISHS7';
+export const ROUTER_CONTRACT =
+  process.env.NEXT_PUBLIC_ROUTER_CONTRACT_ADDRESS ||
+  'CDWKB5KGNSIFEPIRUA7M6ZO67PDMR5AS3YHYRX23XGYM3G3OIYZLTY6P';
+export const XLM_CONTRACT =
+  process.env.NEXT_PUBLIC_XLM_CONTRACT_ADDRESS ||
+  'CDLZFC3SYJYDZT7K67VZ75HPJVIEUVNIXF47ZG2FB2RMQQVU2HHGCYSC';
+export const AFT_ISSUER =
+  process.env.NEXT_PUBLIC_AFT_ISSUER ||
+  'GDR2RAULGQQ2EBDCXWMKBNUI53IOLH5OY3YYXHQ6C4BH3X7ROBDNPT7I';
