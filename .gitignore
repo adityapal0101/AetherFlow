@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Next.js
+.next/
+out/
+
+# Rust / Cargo
+contracts/target/
+
+
+# Environment & Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Screenshots (excluded as requested)
+screenshots/
+
+# System Files
+.DS_Store
+*.log

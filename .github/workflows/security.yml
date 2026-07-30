@@ -1,0 +1,55 @@
+name: Security Scan
+
+on:
+  schedule:
+    - cron: '0 0 * * 1'   # Every Monday at midnight UTC
+  workflow_dispatch:        # Allow manual trigger
+
+jobs:
+
+  cargo-audit:
+    name: Cargo audit (Rust dependencies)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: dtolnay/rust-toolchain@stable
+
+      - name: Install cargo-audit
+        run: cargo install cargo-audit
+
+      - name: Run cargo audit
+        run: cd contracts && cargo audit
+
+      - name: Upload audit report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: audit-report
+          path: contracts/
+
+  npm-audit:
+    name: NPM audit (Node dependencies)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: cd frontend && npm ci
+
+      - name: Run npm audit
+        run: cd frontend && npm audit --audit-level=high
+
+  dependency-review:
+    name: Dependency review (PRs)
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/dependency-review-action@v4
+        with:
+          fail-on-severity: high
