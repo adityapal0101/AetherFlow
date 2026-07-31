@@ -17,8 +17,6 @@ contracts/target/
 .env.test.local
 .env.production.local
 
-# Screenshots (excluded as requested)
-screenshots/
 
 # System Files
 .DS_Store

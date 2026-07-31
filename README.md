@@ -127,10 +127,42 @@ The application surfaces four distinct, user-facing error boundaries:
 
 1. **Wallet Not Connected / Missing** → Prompts the Freighter connection modal with clear installation instructions.
 2. **Invalid Amount** → Displays "Enter an amount to swap".
-3. **Insufficient Network Balance** → Pre-flight check comparing swap amount against current account balance displaying "Insufficient AFT balance".
-4. **User Rejected Signature** → Displays "Transaction rejected in wallet".
+---
+
+## 🖼️ Application Flow & Verification Gallery
+
+### 📹 Interactive Protocol Video Demo
+![AetherFlow Interactive Demo](./screenshots/app_video_demo.gif)
 
 ---
+
+### 🖥️ Desktop & Mobile Interface Overview
+
+#### Desktop Overview & Flow Sequence
+| Home Dashboard Overview | Instant Token Swap Flow |
+| :---: | :---: |
+| ![Desktop Homepage](./screenshots/desktop_homepage.png) | ![Swap Flow](./screenshots/swap_flow.png) |
+
+| Liquidity Provision & Pool Analytics | Mobile Responsive Interface |
+| :---: | :---: |
+| ![Pool Flow](./screenshots/pool_flow.png) | ![Mobile Responsive](./screenshots/mobile_responsive.png) |
+
+---
+
+### 📱 Mobile Responsive Interface (~375px Viewport Adaptation)
+<p align="center">
+  <img src="./screenshots/mobile_swap.png" alt="Mobile Swap" width="32%" />
+  <img src="./screenshots/mobile_pool.png" alt="Mobile Pool" width="32%" />
+  <img src="./screenshots/mobile_dashboard.png" alt="Mobile Dashboard" width="32%" />
+</p>
+
+---
+
+### 🟢 CI/CD Automated Test Pipeline
+![CI/CD Tests Passed](./screenshots/ci_cd_passed.png)
+
+---
+
 
 ## 🚦 Setup & Development Instructions
 
