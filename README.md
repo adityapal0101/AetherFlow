@@ -129,16 +129,10 @@ The application surfaces four distinct, user-facing error boundaries:
 2. **Invalid Amount** → Displays "Enter an amount to swap".
 ---
 
-## 🖼️ Application Flow & Verification Gallery
+## 🖼️ Verification Screenshots
 
-### 📹 Interactive Protocol Video Demo
-![AetherFlow Interactive Demo](./screenshots/app_video_demo.gif)
+### Desktop & Mobile Interface Overview
 
----
-
-### 🖥️ Desktop & Mobile Interface Overview
-
-#### Desktop Overview & Flow Sequence
 | Home Dashboard Overview | Instant Token Swap Flow |
 | :---: | :---: |
 | ![Desktop Homepage](./screenshots/desktop_homepage.png) | ![Swap Flow](./screenshots/swap_flow.png) |
@@ -149,17 +143,8 @@ The application surfaces four distinct, user-facing error boundaries:
 
 ---
 
-### 📱 Mobile Responsive Interface (~375px Viewport Adaptation)
-<p align="center">
-  <img src="./screenshots/mobile_swap.png" alt="Mobile Swap" width="32%" />
-  <img src="./screenshots/mobile_pool.png" alt="Mobile Pool" width="32%" />
-  <img src="./screenshots/mobile_dashboard.png" alt="Mobile Dashboard" width="32%" />
-</p>
-
----
-
-### 🟢 CI/CD Automated Test Pipeline
-![CI/CD Tests Passed](./screenshots/ci_cd_passed.png)
+### CI/CD Pipeline Checks Passed
+![CI/CD Pipeline Checks Passed](./screenshots/ci_cd_passed.png)
 
 ---
 
