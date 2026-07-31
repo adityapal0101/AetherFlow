@@ -131,19 +131,20 @@ The application surfaces four distinct, user-facing error boundaries:
 
 ## 🖼️ Verification Screenshots
 
-### Desktop & Mobile Interface Overview
-
-| Home Dashboard Overview | Instant Token Swap Flow |
-| :---: | :---: |
-| ![Desktop Homepage](./screenshots/desktop_homepage.png) | ![Swap Flow](./screenshots/swap_flow.png) |
-
-| Liquidity Provision & Pool Analytics | Mobile Responsive Interface |
-| :---: | :---: |
-| ![Pool Flow](./screenshots/pool_flow.png) | ![Mobile Responsive](./screenshots/mobile_responsive.png) |
+### 📹 Interactive Protocol Video Demo
+![AetherFlow Demo](./screenshots/app_demo.gif)
 
 ---
 
-### CI/CD Pipeline Checks Passed
+### 🖥️ Desktop & Mobile Interface Overview
+
+| Desktop Interface Preview | Mobile Responsive View |
+| :---: | :---: |
+| ![Desktop Preview](./screenshots/desktop_preview.png) | ![Mobile Preview](./screenshots/mobile_preview.png) |
+
+---
+
+### 🟢 CI/CD Pipeline Checks Passed
 ![CI/CD Pipeline Checks Passed](./screenshots/ci_cd_passed.png)
 
 ---
